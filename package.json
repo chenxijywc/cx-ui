@@ -82,8 +82,8 @@
     "vue-router": "^2.0.0",
     "vue-template-compiler": "^2.3.2",
     "vue-template-es2015-compiler": "^1.4.2",
-    "webpack": "beta",
-    "webpack-dev-server": "beta",
+    "webpack": "^3.0.0-rc.2",
+    "webpack-dev-server": "^2.9.4",
     "webpack-shell-plugin": "^0.4.3"
   },
   "files": [
@@ -99,7 +99,7 @@
     "chenxi"
   ],
   "license": "MIT",
-  "main": "lib/cx-ui.common.js",
+  "main": "lib/index.js",
   "name": "cx-ui",
   "optionalDependencies": {},
   "peerDependencies": {
@@ -110,16 +110,12 @@
     "url": "git+https://github.com/chenxijywc/cx-ui.git"
   },
   "scripts": {
-    "bootstrap": "yarn || npm i",
-    "build:entry": "node build/bin/build-entry",
-    "clean": "rimraf lib && rimraf packages/*/lib",
-    "deploy": "npm run build:entry && cooking build -c build/cooking.demo.js -p && gh-pages -d example/dist --remote eleme",
-    "dev": "npm run bootstrap && npm run build:entry && cooking watch -c build/cooking.demo.js -p",
-    "dist": "npm run clean && npm run build:entry && npm run lint && cooking build -c build/cooking.conf.js,build/cooking.common.js,build/cooking.component.js -p",
-    "lint": "eslint src/**/*.js packages/**/*.{js,vue} build/**/*.js --quiet",
-    "pub": "sh build/release.sh",
-    "pub:all": "node build/bin/build-all.js && lerna publish"
+    "dev": "npm run",
+    "build:lib:clean": "rimraf lib",
+    "build:lib:js": "vue build src/index.js --prod --lib  --dist lib",
+    "build:lib": "npm run build:lib:clean && npm run build:lib:js",
+    "build": "npm run build:lib"
   },
-  "style": "lib/style.css",
-  "version": "2.2.9"
+  "style": "lib/index.css",
+  "version": "1.0.1"
 }
