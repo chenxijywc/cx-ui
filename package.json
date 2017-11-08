@@ -21,8 +21,7 @@
   "_location": "/cx-ui",
   "_nodeVersion": "7.9.0",
   "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/cx-ui-2.2.9.tgz_1501483787389_0.5623998215887696"
+    "host": "s3://npm-registry-packages"
   },
   "_npmUser": {
     "name": "chenxijywc",
@@ -42,13 +41,8 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "http://r.cnpmjs.org/cx-ui/download/cx-ui-2.2.9.tgz",
-  "_shasum": "7c9892560ca647abec2e4d660cd8aee41d738017",
-  "_shrinkwrap": null,
-  "_spec": "cx-ui@^2.1.1",
-  "_where": "D:\\devchexiang\\workspaces\\cxj_h5_web",
   "author": {
-    "name": "elemefe"
+    "name": "chenxijywc"
   },
   "bugs": {
     "url": "https://github.com/ElemeFE/cx-ui/issues"
@@ -92,41 +86,25 @@
     "webpack-dev-server": "beta",
     "webpack-shell-plugin": "^0.4.3"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "7c9892560ca647abec2e4d660cd8aee41d738017",
-    "size": 226272,
-    "noattachment": false,
-    "tarball": "http://r.cnpmjs.org/cx-ui/download/cx-ui-2.2.9.tgz"
-  },
   "files": [
     "lib",
     "src",
     "packages"
   ],
-  "gitHead": "c696c4e90247697726d6b08b183254f116440537",
   "homepage": "https://github.com/chenxijywc/cx-ui",
   "keywords": [
     "component",
     "vue",
     "mobile",
-    "eleme"
+    "chenxi"
   ],
   "license": "MIT",
   "main": "lib/cx-ui.common.js",
-  "maintainers": [
-    {
-      "name": "chenxijywc",
-      "email": "1152053304@qq.com"
-    }
-  ],
   "name": "cx-ui",
   "optionalDependencies": {},
   "peerDependencies": {
     "vue": "^2.3.0"
   },
-  "publish_time": 1501483787775,
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chenxijywc/cx-ui.git"
